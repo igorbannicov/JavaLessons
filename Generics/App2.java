@@ -12,7 +12,7 @@ public class App2 {
     }
 }
 
-// Polymorphism
+// Inheritance/Polymorphism
 class Box {
 
     Object value;
