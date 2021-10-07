@@ -17,16 +17,9 @@ class Box {
 
     Object value;
 
-    Box(Integer value){
+    Box(Object value){
         this.value = value;
     }
-    Box(Double value){
-        this.value = value;
-    }
-    Box(String value){
-        this.value = value;
-    }
-
     public void printString(){
         System.out.println(this.value);
     }
