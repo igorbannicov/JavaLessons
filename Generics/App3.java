@@ -15,7 +15,7 @@ public class App2 {
 // Generics
 class Box <T> {
 
-    T value;
+    protected T value;
 
     Box(T value){
         this.setValue(value);

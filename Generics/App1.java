@@ -25,7 +25,7 @@ class IntegerBox {
 
 class DoubleBox {
 
-    Double value;
+    protected Double value;
 
     DoubleBox(Double value){ this.setValue(value); }
     private void setValue (Double value) { this.value = value; }
@@ -35,7 +35,7 @@ class DoubleBox {
 
 class StringBox {
 
-    String value;
+    protected String value;
 
     StringBox(String value){ this.value = value; }
     private void setValue (String value) { this.value = value; }
