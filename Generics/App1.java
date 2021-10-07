@@ -17,9 +17,7 @@ class IntegerBox {
 
     protected Integer value;
 
-    IntegerBox(Integer value){
-        this.setValue(value);
-    }
+    IntegerBox(Integer value){ this.setValue(value); }
     private void setValue (Integer value) { this.value = value; }
     private String getValue () { return this.value.toString(); }
     public String toString(){ return this.getValue(); }
@@ -39,9 +37,7 @@ class StringBox {
 
     String value;
 
-    StringBox(String value){
-        this.value = value;
-    }
+    StringBox(String value){ this.value = value; }
     private void setValue (String value) { this.value = value; }
     private String getValue () { return this.value.toString(); }
     public String toString(){return this.getValue(); }
