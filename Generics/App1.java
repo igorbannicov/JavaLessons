@@ -6,35 +6,33 @@ public class App2 {
         IntegerBox ib = new  IntegerBox(100);
         DoubleBox db = new  DoubleBox(100.09);
         StringBox sb = new  StringBox("abc");
-        ib.printString();
-        db.printString();
-        sb.printString();
+        System.out.println(ib.toString());
+        System.out.println(db.toString());
+        System.out.println(sb.toString());
     }
 }
 
 // Overload
 class IntegerBox {
 
-    Integer value;
+    protected Integer value;
 
     IntegerBox(Integer value){
-        this.value = value;
+        this.setValue(value);
     }
-    public void printString(){
-        System.out.println(this.value);
-    }
+    private void setValue (Integer value) { this.value = value; }
+    private String getValue () { return this.value.toString(); }
+    public String toString(){ return this.getValue(); }
 }
 
 class DoubleBox {
 
     Double value;
 
-    DoubleBox(Double value){
-        this.value = value;
-    }
-    public void printString(){
-        System.out.println(this.value);
-    }
+    DoubleBox(Double value){ this.setValue(value); }
+    private void setValue (Double value) { this.value = value; }
+    private String getValue () { return this.value.toString(); }
+    public String toString(){return this.getValue(); }
 }
 
 class StringBox {
@@ -44,7 +42,7 @@ class StringBox {
     StringBox(String value){
         this.value = value;
     }
-    public void printString(){
-        System.out.println(this.value);
-    }
+    private void setValue (String value) { this.value = value; }
+    private String getValue () { return this.value.toString(); }
+    public String toString(){return this.getValue(); }
 }

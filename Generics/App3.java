@@ -25,11 +25,10 @@ class Box <T> {
         this.value = value;
     }
 
-    private T getValue(){
-        return (T) this.value;
-    }
+    private String getValue(){ return this.value.toString(); }
 
     public String toString(){
-        return this.value.toString();
+        return this.getValue();
     }
 }
+
